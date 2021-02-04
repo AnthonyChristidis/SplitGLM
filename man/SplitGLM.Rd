@@ -86,9 +86,7 @@ split.out <- SplitGLM(x.train, y.train,
                       alpha_s=3/4, alpha_d=1,
                       lambda_sparsity=1, lambda_diversity=1,
                       tolerance=1e-3, max_iter=1e3,
-                      n_folds=5,
-                      active_set=FALSE,
-                      n_threads=1)
+                      active_set=FALSE)
 split.coef <- coef(split.out)
 # Predictions
 split.prob <- predict(split.out, newx=x.test, type="prob", group_index=NULL)
