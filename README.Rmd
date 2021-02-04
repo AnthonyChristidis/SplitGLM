@@ -1,8 +1,19 @@
+---
+output: github_document
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
 
 [![Build Status](https://travis-ci.com/AnthonyChristidis/SplitGLM.svg?branch=master)](https://travis-ci.com/AnthonyChristidis/SplitGLM) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/SplitGLM)](https://cran.r-project.org/package=SplitGLM) [![Downloads](http://cranlogs.r-pkg.org/badges/SplitGLM)](https://cran.r-project.org/package=SplitGLM)
 
 SplitGLM
-========
+==========
 
 This package provides functions for fitting split generalized linear models.
 
@@ -12,7 +23,7 @@ This package provides functions for fitting split generalized linear models.
 
 You can install the **stable** version on [R CRAN](https://cran.r-project.org/package=SplitGLM).
 
-``` r
+```{r installation, eval = FALSE}
 install.packages("SplitGLM", dependencies = TRUE)
 ```
 
