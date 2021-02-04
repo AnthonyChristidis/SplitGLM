@@ -51,7 +51,7 @@ mean(y.test)
 split.out <- SplitGLM(x.train, y.train,
                       glm_type="Logistic",
                       G=10, include_intercept=TRUE,
-                      alpha=3/4,
+                      alpha_s=3/4, alpha_d=1,
                       lambda_sparsity=1, lambda_diversity=1,
                       tolerance=1e-3, max_iter=1e3,
                       active_set=FALSE)

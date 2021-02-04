@@ -28,10 +28,6 @@ devtools::install_github("AnthonyChristidis/SplitGLM")
 ``` r
 # Required Libraries
 library(mvnfast)
-library(CVTuningCov)
-library(glmnet)
-library(randomForest)
-library(randomGLM)
 
 # Sigmoid function
 sigmoid <- function(t){

@@ -51,12 +51,10 @@
 #' split.out <- SplitGLM(x.train, y.train,
 #'                       glm_type="Logistic",
 #'                       G=10, include_intercept=TRUE,
-#'                       alpha=3/4,
+#'                       alpha_s=3/4, alpha_d=1,
 #'                       lambda_sparsity=1, lambda_diversity=1,
 #'                       tolerance=1e-3, max_iter=1e3,
-#'                       n_folds=5,
-#'                       active_set=FALSE,
-#'                       n_threads=1)
+#'                       active_set=FALSE)
 #' split.coef <- coef(split.out)
 #' # Predictions
 #' split.prob <- predict(split.out, newx=x.test, type="prob", group_index=NULL)
@@ -155,7 +153,7 @@ predict.SplitGLM <- function(object, newx, group_index = NULL, type = c("prob", 
 #' split.out <- cv.SplitGLM(x.train, y.train,
 #'                          glm_type="Logistic",
 #'                          G=10, include_intercept=TRUE,
-#'                          alpha=3/4,
+#'                          alpha_s=3/4, alpha_d=1,
 #'                          n_lambda_sparsity=50, n_lambda_diversity=50,
 #'                          tolerance=1e-3, max_iter=1e3,
 #'                          n_folds=5,
