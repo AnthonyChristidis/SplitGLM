@@ -59,7 +59,7 @@
 #' y.test <- rbinom(N, 1, prob.test)
 #' mean(y.test)
 #' 
-#' # SplitGLM - CV (Multiple Groups)
+#' # SplitGLM - Multiple Groups
 #' split.out <- SplitGLM(x.train, y.train,
 #'                       glm_type="Logistic",
 #'                       G=10, include_intercept=TRUE,
