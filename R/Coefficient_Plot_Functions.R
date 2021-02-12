@@ -61,10 +61,10 @@
 #'                          n_threads=1)
 #'                          
 #' # Plot of coefficients paths (function of Log-Lambda)
-#' plot(split.out, plot_type="Coef", path_type="Log-Lambda", group_index=1, labels=FALSE)
+#' plot(split.out, plot_type="Coef", path_type="Log-Lambda", group_index=1)
 #' 
 #' # Plot of coefficients paths (function of L1-Norm)
-#' plot(split.out, plot_type="Coef", path_type="L1-Norm", group_index=1, labels=FALSE)
+#' plot(split.out, plot_type="Coef", path_type="L1-Norm", group_index=1)
 #' 
 #' # Plot of CV error
 #' plot(split.out, plot_type="CV-Error")
@@ -134,14 +134,14 @@ plot.cv.SplitGLM <- function(x, group_index = NULL,
       coef.matrix <- coef.matrix[, active.coef(x, group_index)]
     
     # Plot type
-    if(path_type=="Log-Lambda"){
+    if(plot_type=="Log-Lambda"){
       
       x.axis.val <- log(x$Lambda_Sparsity)
       plot.x.label <- (expression(log*phantom(x)*lambda[s]))
       xpos <- min(x.axis.val)
       pos <- 2
       
-    } else if(path_type=="L1-Norm"){
+    } else if(plot_type=="L1-Norm"){
         
         x.axis.val <- apply(coef.matrix, 1, function(x) return(sum(abs(x))))
         plot.x.label <- "L1 Norm"

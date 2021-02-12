@@ -75,10 +75,10 @@ split.out <- cv.SplitGLM(x.train, y.train,
                          n_threads=1)
                          
 # Plot of coefficients paths (function of Log-Lambda)
-plot(split.out, plot_type="Coef", path_type="Log-Lambda", group_index=1, labels=FALSE)
+plot(split.out, plot_type="Coef", path_type="Log-Lambda", group_index=1)
 
 # Plot of coefficients paths (function of L1-Norm)
-plot(split.out, plot_type="Coef", path_type="L1-Norm", group_index=1, labels=FALSE)
+plot(split.out, plot_type="Coef", path_type="L1-Norm", group_index=1)
 
 # Plot of CV error
 plot(split.out, plot_type="CV-Error")
