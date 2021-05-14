@@ -216,10 +216,10 @@ void CV_Split_WEN::Compute_Lambda_Diversity_Grid(){
     beta_grid.Set_Lambda_Diversity(lambda_diversity_max);
     beta_grid.Compute_Coef();
   }
-
+  
   // Current grid
   lambda_diversity_grid = arma::exp(arma::linspace(std::log(eps*lambda_diversity_max), std::log(lambda_diversity_max), n_lambda_diversity));
-
+  
   // If we could not kill all the interactions
   if(Check_Interactions_Beta(beta_grid.Get_Coef_Scaled())){
 
