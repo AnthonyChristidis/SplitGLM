@@ -20,6 +20,5 @@ RoxygenNote: 7.0.2
 Suggests: 
     testthat,
     vctrs,
-    mvnfast,
-    glmnet
+    mvnfast
 NeedsCompilation: yes
