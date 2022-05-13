@@ -6,6 +6,7 @@ Date: 2022-05-13
 Authors@R: c(person("Anthony", "Christidis", role=c("aut", "cre"), email = "anthony.christidis@stat.ubc.ca"),
 	     person("Stefan", "Van Aelst", role=c("aut"), email = "stefan.vanaelst@kuleuven.be"),
 	     person("Ruben", "Zamar", role=c("aut"), email = "ruben@stat.ubc.ca"))
+Maintainer: Anthony Christidis <anthony.christidis@stat.ubc.ca>
 Description: Functions to compute split generalized linear models. The approach fits 
              generalized linear models that split the covariates into groups. The 
              optimal split of the variables into groups and the regularized estimation 
